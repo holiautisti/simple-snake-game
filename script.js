@@ -19,16 +19,16 @@ window.onload = function () {
   context = board.getContext("2d");
   placeFood();
   document.addEventListener("keyup", changeDirection);
-  setInterval(update, 1000 / 5);
+  setInterval(update, 350  / 5);
 };
 
 function update() {
   if (gameOver) {
-    return;
+    return;   
   }
-  context.fillStyle = "green";
+  context.fillStyle = "hotpink";
   context.fillRect(0, 0, board.width, board.height);
-  context.fillStyle = "yellow";
+  context.fillStyle = "white";
   context.fillRect(foodX, foodY, blockSize, blockSize);
 
   if (snakeX === foodX && snakeY === foodY) {
@@ -44,7 +44,7 @@ function update() {
     snakeBody[0] = [snakeX, snakeY];
   }
 
-  context.fillStyle = "white";
+  context.fillStyle = "black";
   snakeX += speedX * blockSize;
   snakeY += speedY * blockSize;
   context.fillRect(snakeX, snakeY, blockSize, blockSize);

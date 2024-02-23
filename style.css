@@ -3,11 +3,16 @@ body {
     overflow: hidden;
     background-color: #000;
 }
+ html * {
+    font-family: comic sans ms, Arial, Helvetica, sans-serif;
+    color: hotpink;
+ }
 
-h1, h2, h3 {
-    font-family: 'Arial';
-    color: white;
-}
+ h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+ }
 
 .game {
     display: flex;
@@ -15,43 +20,12 @@ h1, h2, h3 {
 }
 
 canvas {
-    background-color: green;
     display: block;
     margin: auto;
 }
-h1 {
-    align-self: center;
-    font-family: 'Arial';
-    color: black;
-    font-size: 50px;
+
+footer {
+    text-align: center;
     margin-top: 50px;
-    text-shadow: green 0px 0px 10px;
-
-}
-
-p {
-    color: white;
-}
-
-button {
-    align-self: center;
-    font-family: 'Arial';
-    color: black;
-    font-size: 30px;
-    margin-top: 50px;
-    background-color: green;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.score {
-    align-self: center;
-    font-family: 'Arial';
-    color: white;
-    font-size: 30px;
-    margin-top: 50px;
-    text-shadow: green 0px 0px 10px;
+    font-size: 20px;
 }
