@@ -2,6 +2,9 @@ body {
     margin: 0;
     overflow: hidden;
     background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  html * {
     font-family: comic sans ms, Arial, Helvetica, sans-serif;
@@ -22,10 +25,75 @@ body {
 canvas {
     display: block;
     margin: auto;
+    box-shadow: 0 0 10px 10px white;
 }
 
 footer {
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
+}
+
+button {
+    width: 60px;
+}
+
+.mobile-controls {
+    width: 60%;
+}
+
+.button__up {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button__down {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button__left {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.button__right {
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+}
+
+.button__restart {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 10px;
+    }
+    footer {
+        display: none;
+    }
+    canvas {
+        margin: 0;
+        box-shadow: none;
+    }
+    .mobile-controls {
+        width: 90%;
+    }
+    
+}
+
+@media screen and (min-width: 601px) {
+    .mobile-controls {
+        display: none;
+    }
 }

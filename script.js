@@ -1,4 +1,5 @@
 let blockSize = 25;
+let mobileBlockSize = 15;
 let totalRows = 17;
 let totalCols = 17;
 let board;
