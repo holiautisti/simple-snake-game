@@ -1,5 +1,4 @@
 let blockSize = 25;
-let mobileBlockSize = 15;
 let totalRows = 17;
 let totalCols = 17;
 let board;
@@ -20,7 +19,7 @@ window.onload = function () {
   context = board.getContext("2d");
   placeFood();
   document.addEventListener("keyup", changeDirection);
-  setInterval(update, 350  / 5);
+  setInterval(update, 500  / 5);
 };
 
 function update() {
